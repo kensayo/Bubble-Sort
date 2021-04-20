@@ -8,7 +8,7 @@ def bubble_sort_by(arr)
     arr
   end
   
-  string_array = ["hi", "hello", "hey"]
+  string_array = %w[hi hello hey]
   
   bubble_sort_by(string_array) do |left, right|
     left.length - right.length
