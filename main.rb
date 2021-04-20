@@ -1,6 +1,6 @@
 def bubble_sort(arr)
   puts "arr = #{arr}"
-  for i in (0..arr.length - 2)
+  (arr.size - 2).times do |i| 
       if arr[i] > arr[i + 1]
           str, arr[i] = arr[i], arr[i + 1]
           arr[i + 1] = str
