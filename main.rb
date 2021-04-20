@@ -1,9 +1,9 @@
 def bubble_sort(arr)
-  (arr.size - 2).times do |i|
-    next if arr[i] > arr[i + 1]
-
-    arr[i], arr[i + 1] = arr[i + 1], arr[i]
-    arr = bubble_sort(arr)
+  (arr.size - 1).times do |i|
+    if arr[i] > arr[i + 1]
+      arr[i], arr[i + 1] = arr[i + 1], arr[i]
+      arr = bubble_sort(arr)
+    end
   end
   arr
 end
