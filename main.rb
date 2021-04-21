@@ -1,12 +1,19 @@
-def bubble_sort(arr)
-  (arr.size - 1).times do |i|
-    if arr[i] > arr[i + 1]
-      arr[i], arr[i + 1] = arr[i + 1], arr[i]
-      arr = bubble_sort(arr)
+def bubble_sort(bubble_array = [])
+  (bubble_array.length - 1).times do
+    sorted = true
+    (0..(bubble_array.length - 2)).each do |i|
+      temp1 = bubble_array[i]
+      temp2 = bubble_array[i + 1]
+      next unless bubble_array[i] > bubble_array[i + 1]
+
+      sorted = false
+      bubble_array[i] = temp2
+      bubble_array[i + 1] = temp1
     end
+    return bubble_array if sorted == true
   end
-  arr
 end
+
 
 arr = [4, 3, 78, 2, 0, 2]
 
