@@ -14,7 +14,6 @@ def bubble_sort(bubble_array = [])
   end
 end
 
-
 arr = [4, 3, 78, 2, 0, 2]
 
 puts "Integer Unordered Array #{arr}"
