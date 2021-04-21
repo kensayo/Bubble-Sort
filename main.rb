@@ -1,5 +1,5 @@
 def bubble_sort(bubble_array = [])
-  (bubble_array.length).times do
+  bubble_array.length.times do
     sorted = true
     (0..(bubble_array.length - 2)).each do |i|
       temp1 = bubble_array[i]
@@ -15,7 +15,7 @@ def bubble_sort(bubble_array = [])
   bubble_array
 end
 
-arr = [10,9,8,7,6,5,4,3,2,1]
+arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 puts "Integer Unordered Array #{arr}"
 
