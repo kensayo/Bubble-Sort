@@ -27,11 +27,15 @@ This project offers one way of sorting a group of items in an array, where each 
 
 ### Deployment
 
--You can deploy this project by cloning it then:
+- You can deploy this project by cloning it then:
 
 - Go to the repository's settings.
 - Navigate to the GitHub Pages section.
 - Select the appropriate branch.
+
+### Live version
+
+[Live version here](https://replit.com/@KennyOrtega/Bubble-Sort#main.rb)
 
 ## Authors
 
